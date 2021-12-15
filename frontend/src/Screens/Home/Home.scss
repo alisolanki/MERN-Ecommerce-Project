@@ -1,0 +1,34 @@
+.home {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  min-height: 100vh;
+
+  &_carousel {
+    width: 100%;
+    height: 25rem;
+  }
+
+  &_products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home_carousel {
+    height: 22rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .home_carousel {
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .home_carousel {
+    height: 15rem;
+  }
+}

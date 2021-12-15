@@ -1,0 +1,155 @@
+.details {
+  padding: 2rem;
+  min-height: 80vh;
+
+  &_btn {
+    width: 3rem;
+    margin: 10px;
+  }
+
+  &_image {
+    padding: 1rem;
+    width: 34rem;
+
+    img {
+      height: 24rem;
+    }
+  }
+
+  &_main {
+    display: flex;
+  }
+
+  &_content {
+    display: flex;
+    padding-top: 2rem;
+
+    &-info {
+      color: #555;
+      padding: 1rem;
+
+      &-added {
+        background-color: lightblue;
+        color: #333;
+        padding: 10px;
+      }
+
+      h1 {
+        margin-bottom: 1rem;
+      }
+
+      &-rating {
+        display: flex;
+        margin: 1rem 0;
+      }
+
+      &-price {
+        margin: 1rem 0;
+      }
+
+      &-description {
+        margin: 1rem 0;
+      }
+    }
+
+    &-price {
+      width: 30rem;
+      border: 1px solid black;
+      height: 15rem;
+      border-bottom: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      div {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+      }
+
+      label {
+        margin-right: 5px;
+      }
+
+      input {
+        font-size: 1rem;
+        outline: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .details_content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1048px) {
+  .details {
+    &_image {
+      width: 30rem;
+
+      img {
+        height: 22rem;
+      }
+    }
+
+    &_content-price {
+      width: 25rem;
+    }
+  }
+}
+@media only screen and (max-width: 940px) {
+  .details {
+    &_image {
+      width: 27rem;
+
+      img {
+        height: 20rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 890px) {
+  .details {
+    &_image {
+      width: 24rem;
+
+      img {
+        height: 18rem;
+      }
+    }
+
+    &_content-price {
+      width: 22rem;
+    }
+  }
+}
+@media only screen and (max-width: 785px) {
+  .details_main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .details_content-price {
+    margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .details {
+    padding: 1rem;
+
+    &_image {
+      width: 20rem;
+
+      img {
+        height: 15rem;
+      }
+    }
+
+    &_content-price {
+      width: 18rem;
+    }
+  }
+}

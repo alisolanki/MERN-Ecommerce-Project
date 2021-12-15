@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+
+.header {
+  // background-image: linear-gradient(120deg, #a239ea, #52006a);
+  background-color: #0c4271;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0 5px 5px 5px #ddd;
+
+  &_logo {
+    font-size: 1.5rem;
+    font-family: Rampart One, "san-serif";
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+  }
+
+  &_logoimg{
+    background-color: white;
+    clip-path: circle(40%);
+   img{
+     height: 3.5rem;
+   }
+  }
+
+  &_search {
+    height: 2rem;
+    background-color: white;
+    width: 25rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+
+    input {
+      flex-grow: 1;
+      font-size: 1.3rem;
+      border: none;
+      outline: none;
+      padding: 10px;
+    }
+    input[type="text"] {
+      font-size: 1rem;
+    }
+    &-icon {
+      height: 100%;
+      border: none;
+      box-sizing: box;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &_navigation {
+    list-style: none;
+    display: flex;
+
+    &_item {
+      margin-right: 2rem;
+
+      &-link {
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .header {
+    &_search {
+      width: 20rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .header {
+    &_search {
+      width: 15rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .header {
+    font-size: 20%;
+
+    &_search {
+      display: none;
+    }
+
+    &_logo {
+      font-size: 1.5rem;
+    }
+
+    &_navigation_item-link {
+      font-size: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .header {
+    padding: 1rem;
+    &_navigation_item {
+      margin-right: 1rem;
+    }
+  }
+}

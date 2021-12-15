@@ -1,0 +1,23 @@
+.btn {
+  padding: 10px;
+  background-color: #083257;
+  /* background-color: #3e215d; */
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.message {
+  padding: 10px;
+  margin-bottom: 1rem;
+  color: red;
+  background-color: lightblue;
+}
