@@ -10,7 +10,7 @@ const Footer = () => {
         <li>Career</li>
       </ul>
       <div>
-        <p>&copy; by Swapnil Kadam</p>
+        <p>&copy; by Rohan and Ali</p>
       </div>
     </footer>
   );
